@@ -1,15 +1,15 @@
 body {
-margin: 15px;
+  margin: 15px;
 }
 
 .title {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
 }
 
 .list {
@@ -17,27 +17,26 @@ margin: 15px;
 }
 
 .refresh {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .ref-btn {
-    height: fit-content;
-    margin: 25px;
+  margin: 25px;
 }
 
 button {
-    background-color: transparent;
-    border: 3px solid black;
-    padding: 5px;
-    box-shadow: 2px 2px black;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 5px;
+  box-shadow: 2px 2px black;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 250px 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 250px 0 20px;
 }
 
 .extra {
@@ -47,22 +46,22 @@ button {
 }
 
 .smt-btn {
-    width: 60px;
-    height: 35px;
-    align-self: flex-end;
+  width: 60px;
+  height: 35px;
+  align-self: flex-end;
 }
 
 ul {
-    border: 3px solid black;
-    padding: 5px;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 li {
-    list-style-type: none;
-    padding: 5px;
-    font-weight: bold;
+  list-style-type: none;
+  padding: 5px;
+  font-weight: bold;
 }
 
 li:nth-child(odd) {
-    background-color: rgb(226, 222, 222);
+  background-color: rgb(226, 222, 222);
 }
