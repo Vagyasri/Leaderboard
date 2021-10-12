@@ -11,6 +11,10 @@ The leaderboard website displays scores submitted by different players. It also 
 - ES6
 - Webpack
 
+## Live Demo
+
+[Live View!!](https://vagyasri.github.io/Leaderboard/dist/)
+
 ## Author
 
 👤 **Bhagyashree Patra**
