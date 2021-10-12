@@ -1,6 +1,7 @@
 import './style.css';
 
 const container = document.querySelector('.ul-dom');
+const ref = document.querySelector('.ref-btn');
 
 const display = () => {
   container.forEach((name, score) => {
@@ -10,4 +11,11 @@ const display = () => {
   });
 };
 
+const refresh = () => {
+  ref.addEventListener('click', () => {
+    window.location.reload();
+  });
+};
+
+refresh();
 display();
