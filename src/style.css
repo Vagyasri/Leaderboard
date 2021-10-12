@@ -51,3 +51,18 @@ button {
     height: 35px;
     align-self: flex-end;
 }
+
+ul {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(226, 222, 222);
+}
