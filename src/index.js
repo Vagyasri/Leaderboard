@@ -1,32 +1,23 @@
+import { } from 'lodash';
 import './style.css';
 
 const container = document.querySelector('.ul-dom');
-// const ref = document.querySelector('.ref-btn');
-const name = document.querySelector('.plus');
-const score = document.querySelector('.score');
+const ref = document.querySelector('.ref-btn');
+const name = document.querySelector('.plus').value;
+const score = document.querySelector('.score').value;
 const form = document.querySelector('.form');
 
 const list = [];
 
-const display = () => {
-  list.forEach((name, score) => {
-    container.innerHTML = `<li>
-      ${name}: ${score}
-      </li>`;
-  });
-};
+container.innerHTML = '<li></li>';
 
-// const refresh = () => {
-//   ref.addEventListener('click', () => {
-//     window.location.reload();
-//   });
-// };
+ref.addEventListener('click', () => {
+  window.location.reload();
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const yourName = name.value;
-  const yourScore = score.value;
+  const yourName = name;
+  const yourScore = score;
   list.push(yourName, yourScore);
 });
-
-display();
