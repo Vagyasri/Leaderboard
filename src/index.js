@@ -7,16 +7,18 @@ const score = document.querySelector('.score');
 const refresh = document.querySelector('.ref-btn');
 const submit = document.querySelector('.smt-btn');
 
-refresh.addEventListener('click', () => {
-  window.location.reload();
-});
-
 const add = (e) => {
   e.preventDefault();
   const listContent = document.createElement('li');
   listContent.classList = 'list-content';
   listContent.innerText = `${name.value}: ${score.value}`;
   container.appendChild(listContent);
+  name.value = '';
+  score.value = '';
 };
+
+refresh.addEventListener('click', () => {
+  window.location.reload();
+});
 
 submit.addEventListener('click', add);
