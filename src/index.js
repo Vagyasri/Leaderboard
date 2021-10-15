@@ -9,6 +9,7 @@ const submit = document.querySelector('.smt-btn');
 
 const add = (e) => {
   e.preventDefault();
+  if (name.value == null || name.value === '' || score.value == null || score.value === '') return;
   const listContent = document.createElement('li');
   listContent.classList = 'list-content';
   listContent.innerText = `${name.value}: ${score.value}`;
