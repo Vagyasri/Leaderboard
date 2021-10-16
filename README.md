@@ -10,6 +10,7 @@ The leaderboard website displays scores submitted by different players. It also 
 - JavaScipt
 - ES6
 - Webpack
+- API
 
 ## Live Demo
 
