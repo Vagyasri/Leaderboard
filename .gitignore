@@ -41,6 +41,10 @@ build/Release
 .DS_Store
 node_modules/
 jspm_packages/
+.hasInstallScript/
+.eslintrc.json/
+.github/
+.stylelintrc.json/
 dist/
 
 # TypeScript v1 declaration files
