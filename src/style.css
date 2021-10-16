@@ -23,7 +23,8 @@ body {
 }
 
 .ref-btn {
-  margin: 25px;
+  height: 35px;
+  margin: 20px 0;
 }
 
 button {
@@ -31,12 +32,18 @@ button {
   border: 3px solid black;
   padding: 5px;
   box-shadow: 2px 2px black;
+  cursor: pointer;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  margin: 0 250px 0 20px;
+  margin: 0 20px;
+  width: 35%;
+}
+
+.name {
+  margin-top: 10px;
 }
 
 .extra {
@@ -53,7 +60,7 @@ button {
 
 ul {
   border: 3px solid black;
-  padding: 5px;
+  padding-left: 0;
 }
 
 li {
