@@ -31,7 +31,6 @@ const add = (e) => {
       score.value = '';
       display(allScores.result);
     });
-  // reload();
 };
 
 form.addEventListener('submit', add);
