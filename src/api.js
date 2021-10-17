@@ -10,9 +10,22 @@ const getData = async () => {
   return data;
 };
 
+const stopRepeat = (arr) => {
+  const uniqueNames = [...new Set(arr.map((obj) => obj.user))];
+  const newArr = uniqueNames.map((name) => {
+    const newObj = {
+      user: name,
+      score: Math.max(...arr.filter((u) => u.user === name)
+        .map((u) => u.score)),
+    };
+    return newObj;
+  });
+  return newArr;
+};
+
 const display = (data) => {
   container.innerHTML = '';
-  [...new Set(data)].sort((a, b) => b.score - a.score)
+  stopRepeat(data).sort((a, b) => b.score - a.score)
     .forEach((score) => {
       const listContent = document.createElement('li');
       listContent.classList = 'list-content';
